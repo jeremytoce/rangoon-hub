@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "components": [
+    {
+      "name": "health-coach",
+      "type": "steward",
+      "description": "A health and wellness steward that tracks nutrition, sleep, and overall well-being",
+      "path": "stewards/health-coach",
+      "tags": ["health", "wellness", "nutrition", "sleep"]
+    },
+    {
+      "name": "fitness-coach",
+      "type": "steward",
+      "description": "A fitness steward that tracks workouts, sets goals, and maintains exercise accountability",
+      "path": "stewards/fitness-coach",
+      "tags": ["fitness", "exercise", "workouts", "training"]
+    },
+    {
+      "name": "writing-coach",
+      "type": "steward",
+      "description": "A writing steward that tracks writing habits, provides feedback, and maintains creative momentum",
+      "path": "stewards/writing-coach",
+      "tags": ["writing", "creativity", "habits", "feedback"]
+    },
+    {
+      "name": "accountability",
+      "type": "skill",
+      "description": "Hold the user accountable to their stated goals with direct, evidence-based follow-ups",
+      "path": "skills/accountability",
+      "tags": ["accountability", "goals", "follow-up"]
+    },
+    {
+      "name": "daily-check-in",
+      "type": "skill",
+      "description": "Structured daily check-in that reviews yesterday's commitments and sets today's priorities",
+      "path": "skills/daily-check-in",
+      "tags": ["daily", "check-in", "routine", "planning"]
+    },
+    {
+      "name": "weekly-review",
+      "type": "skill",
+      "description": "Weekly reflection and planning skill that reviews progress, identifies patterns, and sets upcoming goals",
+      "path": "skills/weekly-review",
+      "tags": ["weekly", "review", "reflection", "planning"]
+    },
+    {
+      "name": "morning-standup",
+      "type": "routine",
+      "description": "Daily morning routine that runs a check-in with each steward to surface priorities and blockers",
+      "path": "routines/morning-standup",
+      "tags": ["daily", "morning", "standup", "priorities"]
+    },
+    {
+      "name": "weekly-reset",
+      "type": "routine",
+      "description": "Weekly routine that triggers a review session, archives completed tasks, and sets goals for the coming week",
+      "path": "routines/weekly-reset",
+      "tags": ["weekly", "reset", "goals", "review"]
+    }
+  ]
+}

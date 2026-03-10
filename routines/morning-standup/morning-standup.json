@@ -1,0 +1,12 @@
+{
+  "name": "morning-standup",
+  "description": "Daily morning routine that runs a check-in with each steward to surface priorities and blockers",
+  "schedule": "0 8 * * *",
+  "steps": [
+    {
+      "type": "steward",
+      "steward": "*",
+      "prompt": "Review yesterday's journal and surface today's priorities and blockers. Run your daily check-in skill if you have one."
+    }
+  ]
+}
