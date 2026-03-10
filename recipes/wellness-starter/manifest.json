@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "Wellness Starter",
+  "description": "A wellness bundle: health coach steward with accountability skill and morning standup routine",
+  "components": [
+    { "type": "steward", "ref": "health-coach" },
+    { "type": "skill", "ref": "accountability", "target_steward": "health-coach" },
+    { "type": "routine", "ref": "morning-standup" }
+  ],
+  "mcp_servers": {
+    "apple-health": {
+      "package": "@anthropic/apple-health-mcp",
+      "env_vars": ["APPLE_HEALTH_TOKEN"]
+    }
+  },
+  "config_overrides": {
+    "cadence": "daily",
+    "nudge_days": 2
+  },
+  "inputs": [
+    {
+      "id": "health-steps",
+      "type": "mcp",
+      "server": "apple-health",
+      "tool": "get_steps"
+    }
+  ]
+}

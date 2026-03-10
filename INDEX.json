@@ -56,6 +56,13 @@
       "description": "Weekly routine that triggers a review session, archives completed tasks, and sets goals for the coming week",
       "path": "routines/weekly-reset",
       "tags": ["weekly", "reset", "goals", "review"]
+    },
+    {
+      "name": "wellness-starter",
+      "type": "recipe",
+      "description": "Wellness bundle: health coach with accountability skill and morning standup",
+      "path": "recipes/wellness-starter",
+      "tags": ["wellness", "health", "starter", "bundle"]
     }
   ]
 }
