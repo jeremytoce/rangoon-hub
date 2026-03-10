@@ -9,7 +9,7 @@
   ],
   "mcp_servers": {
     "strava": {
-      "package": "mcp-server-strava",
+      "package": "strava-mcp-server",
       "env_vars": ["STRAVA_CLIENT_ID", "STRAVA_CLIENT_SECRET", "STRAVA_REFRESH_TOKEN"]
     }
   },
