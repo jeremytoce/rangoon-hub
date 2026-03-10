@@ -63,6 +63,13 @@
       "description": "Wellness bundle: health coach with accountability skill and morning standup",
       "path": "recipes/wellness-starter",
       "tags": ["wellness", "health", "starter", "bundle"]
+    },
+    {
+      "name": "life-system",
+      "type": "recipe",
+      "description": "Complete personal management: health, fitness, and writing stewards with accountability, check-ins, reviews, and automated routines",
+      "path": "recipes/life-system",
+      "tags": ["productivity", "health", "fitness", "writing", "complete"]
     }
   ]
 }

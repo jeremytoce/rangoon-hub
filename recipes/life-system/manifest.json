@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "name": "Life System",
+  "description": "Complete personal management: health, fitness, and writing stewards with accountability, daily check-ins, weekly reviews, and automated routines",
+  "components": [
+    { "type": "steward", "ref": "health-coach" },
+    { "type": "steward", "ref": "fitness-coach" },
+    { "type": "steward", "ref": "writing-coach" },
+    { "type": "skill", "ref": "accountability", "target_steward": "health-coach" },
+    { "type": "skill", "ref": "accountability", "target_steward": "fitness-coach" },
+    { "type": "skill", "ref": "daily-check-in", "target_steward": "health-coach" },
+    { "type": "skill", "ref": "daily-check-in", "target_steward": "fitness-coach" },
+    { "type": "skill", "ref": "weekly-review", "target_steward": "writing-coach" },
+    { "type": "routine", "ref": "morning-standup" },
+    { "type": "routine", "ref": "weekly-reset" }
+  ],
+  "mcp_servers": {
+    "google-calendar": {
+      "package": "@anthropic/google-calendar-mcp",
+      "env_vars": ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"]
+    },
+    "filesystem": {
+      "package": "@anthropic/filesystem-mcp",
+      "args": ["--root", "~/Documents/writing"]
+    }
+  },
+  "config_overrides": {
+    "cadence": "daily",
+    "nudge_days": 3
+  },
+  "inputs": [
+    {
+      "id": "calendar-events",
+      "type": "mcp",
+      "server": "google-calendar",
+      "tool": "list_events"
+    },
+    {
+      "id": "writing-drafts",
+      "type": "filesystem",
+      "path": "~/Documents/writing",
+      "glob": "**/*.md"
+    }
+  ]
+}
