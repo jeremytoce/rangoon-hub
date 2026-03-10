@@ -8,9 +8,9 @@
     { "type": "routine", "ref": "morning-standup" }
   ],
   "mcp_servers": {
-    "exa": {
-      "package": "@anthropic-ai/mcp-server-exa",
-      "env_vars": ["EXA_API_KEY"]
+    "strava": {
+      "package": "mcp-server-strava",
+      "env_vars": ["STRAVA_CLIENT_ID", "STRAVA_CLIENT_SECRET", "STRAVA_REFRESH_TOKEN"]
     }
   },
   "config_overrides": {
@@ -21,8 +21,8 @@
     {
       "id": "health-steps",
       "type": "mcp",
-      "server": "exa",
-      "tool": "search"
+      "server": "strava",
+      "tool": "get_activities"
     }
   ]
 }
