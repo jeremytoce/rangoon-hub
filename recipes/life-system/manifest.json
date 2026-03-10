@@ -16,12 +16,13 @@
   ],
   "mcp_servers": {
     "google-calendar": {
-      "package": "@anthropic/google-calendar-mcp",
-      "env_vars": ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"]
+      "package": "@nspady/google-calendar-mcp",
+      "env_vars": ["GOOGLE_OAUTH_CREDENTIALS"]
     },
     "filesystem": {
-      "package": "@anthropic/filesystem-mcp",
-      "args": ["--root", "~/Documents/writing"]
+      "package": "@anthropic-ai/mcp-server-filesystem",
+      "args": ["--root", "~/Documents/writing"],
+      "env_vars": []
     }
   },
   "config_overrides": {

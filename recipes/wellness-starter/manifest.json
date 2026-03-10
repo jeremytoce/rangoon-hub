@@ -8,9 +8,10 @@
     { "type": "routine", "ref": "morning-standup" }
   ],
   "mcp_servers": {
-    "apple-health": {
-      "package": "@anthropic/apple-health-mcp",
-      "env_vars": ["APPLE_HEALTH_TOKEN"]
+    "filesystem": {
+      "package": "@anthropic-ai/mcp-server-filesystem",
+      "args": ["--root", "~/Documents"],
+      "env_vars": []
     }
   },
   "config_overrides": {
@@ -21,8 +22,8 @@
     {
       "id": "health-steps",
       "type": "mcp",
-      "server": "apple-health",
-      "tool": "get_steps"
+      "server": "filesystem",
+      "tool": "read_file"
     }
   ]
 }
