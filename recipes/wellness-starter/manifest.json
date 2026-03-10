@@ -8,10 +8,9 @@
     { "type": "routine", "ref": "morning-standup" }
   ],
   "mcp_servers": {
-    "filesystem": {
-      "package": "@anthropic-ai/mcp-server-filesystem",
-      "args": ["--root", "~/Documents"],
-      "env_vars": []
+    "exa": {
+      "package": "@anthropic-ai/mcp-server-exa",
+      "env_vars": ["EXA_API_KEY"]
     }
   },
   "config_overrides": {
@@ -22,8 +21,8 @@
     {
       "id": "health-steps",
       "type": "mcp",
-      "server": "filesystem",
-      "tool": "read_file"
+      "server": "exa",
+      "tool": "search"
     }
   ]
 }
