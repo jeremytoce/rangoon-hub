@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "skills": [
+    {
+      "id": "accountability-checkin",
+      "name": "Accountability Check-in",
+      "description": "Opens every session by reviewing recent commitments and surfacing anything overdue or at risk. Direct, honest, no sugarcoating.",
+      "author": "rangoon",
+      "version": "1.0.0",
+      "updatedAt": "2026-04-05",
+      "installCount": 142,
+      "compatibleRoles": ["steward"],
+      "contentPath": "skills/accountability-checkin.md"
+    },
+    {
+      "id": "email-intelligence-gatherer",
+      "name": "Email Intelligence Gatherer",
+      "description": "Scans the inbox for actionable items during routine data collection sweeps. Categorizes by urgency and suggests next actions.",
+      "author": "rangoon",
+      "version": "1.0.0",
+      "updatedAt": "2026-04-05",
+      "installCount": 89,
+      "compatibleRoles": ["steward", "conductor"],
+      "contentPath": "skills/email-intelligence-gatherer.md"
+    },
+    {
+      "id": "weekly-review",
+      "name": "Weekly Review",
+      "description": "Guided weekly review: what happened, what was missed, pattern recognition, and next week planning with concrete tasks.",
+      "author": "rangoon",
+      "version": "1.0.0",
+      "updatedAt": "2026-04-05",
+      "installCount": 203,
+      "compatibleRoles": ["steward"],
+      "contentPath": "skills/weekly-review.md"
+    },
+    {
+      "id": "deep-work-guard",
+      "name": "Deep Work Guard",
+      "description": "Protects focus sessions by deferring non-urgent interruptions and providing a digest when the session ends.",
+      "author": "rangoon",
+      "version": "1.0.0",
+      "updatedAt": "2026-04-05",
+      "installCount": 67,
+      "compatibleRoles": ["steward", "operator"],
+      "contentPath": "skills/deep-work-guard.md"
+    },
+    {
+      "id": "relationship-nurture",
+      "name": "Relationship Nurture",
+      "description": "Tracks important relationships and surfaces gentle nudges when connections need attention. Remembers birthdays and milestones.",
+      "author": "rangoon",
+      "version": "1.0.0",
+      "updatedAt": "2026-04-05",
+      "installCount": 118,
+      "compatibleRoles": ["steward"],
+      "contentPath": "skills/relationship-nurture.md"
+    }
+  ]
+}
